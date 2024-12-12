@@ -1,0 +1,13 @@
+name: 332
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: 332
+    steps:
+      - run: sudo apt install neofetch -y
+      - run: curl -sSf https://sshx.io/get | sh -s run
